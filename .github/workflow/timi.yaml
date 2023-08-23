@@ -1,0 +1,17 @@
+name: my second test 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Looking:
+    runs-on: ubuntu-latest
+    steps:
+      - name: just testing
+      - uses: actions/checkout@v2
+        run: echo " this is just a test"
+        shell: bash
