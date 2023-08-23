@@ -1,0 +1,26 @@
+name: My first git hub action project
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  HelloWorld:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v2
+      - name: runing an Hello World
+        run: echo " Hello World"
+        shell: bash
+
+  ClosingGreatings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Closing the Hello World Greeting
+        run: echo " i am closing the Hello World welcome message"
+        shell: bash
+
