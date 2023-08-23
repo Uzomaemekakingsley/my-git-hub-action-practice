@@ -23,7 +23,6 @@ jobs:
             /repos/${ORGANISATION}/${REPOSITORY}/issues/${ISSUE_NUMBER}/comments \
             -f body='Me too' 
         env:
-          GITHUB_TOKEN: ${{ secretes.GITHUB_TOKEN }}
           ORGANISATION: ${{ github.event.organisation.login }}
           REPOSITORY: ${{ github.event.repository.name }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
