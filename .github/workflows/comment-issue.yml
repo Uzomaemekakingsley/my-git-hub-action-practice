@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions: {}
     steps:
-      - name: new-test
+      - name: new-test-w
       - env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ORGANISATION: ${{ github.event.organisation.login }}
